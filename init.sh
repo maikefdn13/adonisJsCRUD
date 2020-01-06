@@ -4,7 +4,9 @@ echo "Create .env:"
 source .env
 
 echo "Run migration:"
-#adonis migration:run --force
+adonis migration:run --force
+
+#chmod 777 na pasta ./database/pgdata
 
 if [ "$NODE_ENV" == "production" ];then
 	echo "Start node server production:"
