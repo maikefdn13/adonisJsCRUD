@@ -1,6 +1,8 @@
 # Node modules
 node_modules
 package-lock.json
+.config
+.npm
 
 # Adonis directory for storing tmp files
 tmp
@@ -14,3 +16,8 @@ database/*.sqlite
 # VSCode & Webstorm history directories
 .history
 .idea
+
+# postgres
+pgdata
+
+.bash_history
