@@ -1,10 +1,18 @@
 #!/bin/bash
 
-echo "Create .env:"
-source .env
+# -----------------------------------------
+# Resolvendo 'bad interpreter' no Bash
+#
+# sed -i 's/\r$//' script.sh
+# ./script.sh
+# -----------------------------------------
+
+
+#echo "Create .env:"
+source $HOME/.env
 
 echo "Run migration:"
-adonis migration:run --force
+adonis migration:run
 
 #chmod 777 na pasta ./database/pgdata
 

@@ -4,7 +4,7 @@ LABEL maintainer="Maike Rodrigues <maikefdn13@gmail.com>"
 
 ENV HOME=/usr/app
 
-#USER root
+USER root
 WORKDIR $HOME
 
 COPY package*.json $HOME/
